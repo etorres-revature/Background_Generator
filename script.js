@@ -6,6 +6,8 @@ const body = document.getElementById("gradient");
 function colorPicker() {
   body.style.background =
     "linear-gradient(to right, " + color1.value + ", " + color2.value + ")";
+
+  css.textContent = body.style.background + ";";
 }
 
 color1.addEventListener("input", colorPicker);
